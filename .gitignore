@@ -1,0 +1,74 @@
+# 依赖目录
+node_modules/
+.pnpm-store/
+
+# 构建输出目录
+dist/
+.vite/
+.vitepress/dist/
+.vitepress/cache/
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 覆盖率目录
+coverage/
+*.lcov
+
+# nyc 测试覆盖率
+.nyc_output
+
+# 依赖锁定文件（可选，根据团队策略决定）
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
+
+# 编辑器配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 静态资源目录（构建时生成）
+public/assets/
+public/images/
+public/fonts/
+public/videos/
+public/audios/
+
+# 其他
+*.log
+.temp/
+.tmp/
