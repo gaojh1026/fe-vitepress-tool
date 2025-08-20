@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "docs:deploy": "pnpm docs:build && echo '构建完成，请推送到 GitHub 触发自动部署'"
   },
   "keywords": [],
   "author": "",
