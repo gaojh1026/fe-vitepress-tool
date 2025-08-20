@@ -2,8 +2,14 @@ import { defineConfig } from "vitepress";
 import { withSidebar } from "vitepress-sidebar";
 
 const vitePressOptions = {
+  base: "/project-vitepress/", //网站部署的路径，默认根目录
   title: "方法集",
   description: "一些方法使用文档",
+  //fav图标
+  head: [
+    ["link", { rel: "icon", href: "/icons/favicon.svg" }], //部署到根目录 [!code --]
+    ["link", { rel: "icon", href: "/project-vitepress/icons/favicon.svg" }], //部署到vitepress仓库 [!code ++]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
