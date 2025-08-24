@@ -1,6 +1,7 @@
 {
-  "name": "project-vitepress",
+  "name": "fe-vitepress-tool",
   "version": "1.0.0",
+  "description": "专注于前端开发的实用工具集合，包含SSE流式管理器、轮询管理器等，提供完整的API文档和使用示例",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +11,36 @@
     "docs:preview": "vitepress preview docs",
     "docs:deploy": "pnpm docs:build && echo '构建完成，请推送到 GitHub 触发自动部署'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "前端工具",
+    "SSE",
+    "轮询",
+    "流式请求",
+    "Vue3",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "VitePress",
+    "文档工具"
+  ],
+  "author": "gaojh1026 <gaojh1026@example.com>",
   "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaojh1026/fe-vitepress-tool.git"
+  },
+  "homepage": "https://gaojh1026.github.io/fe-vitepress-tool/",
+  "bugs": {
+    "url": "https://github.com/gaojh1026/fe-vitepress-tool/issues"
+  },
   "dependencies": {
     "vitepress": "^1.6.4"
   },
   "devDependencies": {
     "vitepress-sidebar": "^1.33.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=7.0.0"
   }
 }

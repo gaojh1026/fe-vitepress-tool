@@ -5,18 +5,29 @@ const base = "/fe-vitepress-tool/";
 
 const vitePressOptions = {
   base: "/fe-vitepress-tool/", //网站部署的路径，默认根目录
-  title: "方法集",
-  description: "一些方法使用文档",
+  title: "前端工具集 - 提升开发效率的实用工具",
+  description:
+    "专注于前端开发的实用工具集合，包含SSE流式管理器、轮询管理器等，提供完整的API文档和使用示例",
   //fav图标
   head: [
     ["link", { rel: "icon", href: "/icons/favicon.svg" }], //部署到根目录 [!code --]
     ["link", { rel: "icon", href: "/project-vitepress/icons/favicon.svg" }], //部署到vitepress仓库 [!code ++]
+    [
+      "meta",
+      {
+        name: "keywords",
+        content: "前端工具,SSE,轮询,流式请求,Vue3,React,JavaScript",
+      },
+    ],
+    ["meta", { name: "author", content: "gaojh1026" }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    siteTitle: "前端工具集",
+    logo: "/icons/icon-32x32.png",
     nav: [
       { text: "首页", link: "/" },
-      { text: "说明文档", link: "/examples" },
+      { text: "工具文档", link: "/examples" },
     ],
 
     // sidebar: false, // 关闭sidebar
@@ -56,6 +67,28 @@ const vitePressOptions = {
     // 文章页右侧标题级别，[2, 6] 表示从 h2 到 h6 的标题都会显示
     outline: [2, 3],
     outlineTitle: "文章大纲",
+
+    // 添加页脚信息
+    footer: {
+      message: "Released under the ISC License.",
+      copyright: "Copyright © 2024-present gaojh1026",
+    },
+
+    // 添加编辑链接
+    editLink: {
+      pattern:
+        "https://github.com/gaojh1026/fe-vitepress-tool/edit/main/docs/:path",
+      text: "在 GitHub 上编辑此页",
+    },
+
+    // 添加最后更新时间
+    lastUpdated: {
+      text: "最后更新时间",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
   },
 };
 
