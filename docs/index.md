@@ -91,6 +91,6 @@ npm run build
 - 💬 微信: 扫描页面右下角二维码
 - 🌟 给项目点个 Star: [GitHub 仓库](https://github.com/gaojh1026/fe-vitepress-tool)
 
-<!-- ## 📄 许可证
+## 📄 许可证
 
-本项目基于 [ISC License](LICENSE) 开源协议。 -->
+<!-- 本项目基于 [ISC License](LICENSE) 开源协议。 -->
