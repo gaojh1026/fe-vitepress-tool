@@ -1,6 +1,6 @@
 # 🔄 轮询管理器
 
-> 智能的轮询请求管理工具，支持Vue3、React等主流框架，让轮询操作变得简单可靠
+> 智能的轮询请求管理工具，支持 Vue3、React 等主流框架，让轮询操作变得简单可靠
 
 ## 📖 概述
 
@@ -67,24 +67,26 @@
 ## 🚀 快速开始
 
 ### Vue3 版本
+
 ```typescript
-import { usePolling } from '@fe-tools/polling-manager-vue3';
+import { usePolling } from "@fe-tools/polling-manager-vue3";
 
 const { start, stop, isPolling } = usePolling({
   request: fetchOrderStatus,
   interval: 5000,
-  immediate: true
+  immediate: true,
 });
 ```
 
 ### React 版本
+
 ```typescript
-import { usePolling } from '@fe-tools/polling-manager-react';
+import { usePolling } from "@fe-tools/polling-manager-react";
 
 const { start, stop, isPolling } = usePolling({
   request: fetchOrderStatus,
   interval: 5000,
-  immediate: true
+  immediate: true,
 });
 ```
 
@@ -92,7 +94,7 @@ const { start, stop, isPolling } = usePolling({
 
 - **[Vue3 文档](/轮询管理器/docs-vue3)** - Vue3 Composition API 使用指南
 - **[React 文档](/轮询管理器/docs-react)** - React Hooks 使用指南
-- **[开发文档](/轮询管理器/docs-dev)** - 详细的开发指南和API文档
+- **[开发文档](/轮询管理器/docs-dev)** - 详细的开发指南和 API 文档
 
 ## 🔧 技术架构
 
@@ -113,7 +115,7 @@ const { start, stop, isPolling } = usePolling({
 ## 🚀 性能特性
 
 - **低内存占用**: 智能的资源管理，最小化内存占用
-- **高效定时器**: 优化的定时器实现，减少CPU占用
+- **高效定时器**: 优化的定时器实现，减少 CPU 占用
 - **智能清理**: 自动清理无用资源，防止内存泄漏
 - **批量更新**: 批量处理状态更新，提高渲染性能
 
@@ -134,26 +136,29 @@ const { start, stop, isPolling } = usePolling({
 ## 🎨 最佳实践
 
 ### 1. 合理设置轮询间隔
+
 ```typescript
 // 根据业务需求设置合适的轮询间隔
 const { start } = usePolling({
   request: fetchData,
   interval: 5000, // 5秒间隔，避免过于频繁
-  maxRetries: 3   // 最大重试次数
+  maxRetries: 3, // 最大重试次数
 });
 ```
 
 ### 2. 使用条件轮询
+
 ```typescript
 // 满足条件时自动停止轮询
 const { start } = usePolling({
   request: fetchOrderStatus,
-  condition: (data) => data.status === 'completed',
-  interval: 2000
+  condition: (data) => data.status === "completed",
+  interval: 2000,
 });
 ```
 
 ### 3. 及时清理资源
+
 ```typescript
 // 组件卸载时自动清理，无需手动处理
 onUnmounted(() => {
@@ -172,8 +177,8 @@ onUnmounted(() => {
 
 ## 📈 更新日志
 
-查看最新的功能更新和bug修复：[更新日志](https://github.com/gaojh1026/fe-vitepress-tool/releases)
+查看最新的功能更新和 bug 修复：[更新日志](https://github.com/gaojh1026/fe-vitepress-tool/releases)
 
 ---
 
-**开始使用** → [查看Vue3文档](/轮询管理器/docs-vue3) | [查看React文档](/轮询管理器/docs-react)
+**开始使用** → [查看 Vue3 文档](/轮询管理器/docs-vue3) | [查看 React 文档](/轮询管理器/docs-react)
