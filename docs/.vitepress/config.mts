@@ -1,8 +1,10 @@
 import { defineConfig } from "vitepress";
 import { withSidebar } from "vitepress-sidebar";
 
+const base = "/fe-vitepress-tool/";
+
 const vitePressOptions = {
-  base: "/project-vitepress/", //网站部署的路径，默认根目录
+  base: "/fe-vitepress-tool/", //网站部署的路径，默认根目录
   title: "方法集",
   description: "一些方法使用文档",
   //fav图标
