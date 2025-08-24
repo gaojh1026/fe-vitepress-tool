@@ -4,14 +4,14 @@ import { withSidebar } from "vitepress-sidebar";
 const base = "/fe-vitepress-tool/";
 
 const vitePressOptions = {
-  base: "/fe-vitepress-tool/", //网站部署的路径，默认根目录
+  base: base, //网站部署的路径，默认根目录
   title: "前端工具集 - 提升开发效率的实用工具",
   description:
     "专注于前端开发的实用工具集合，包含SSE流式管理器、轮询管理器等，提供完整的API文档和使用示例",
   //fav图标
   head: [
     ["link", { rel: "icon", href: "/icons/favicon.svg" }], //部署到根目录 [!code --]
-    ["link", { rel: "icon", href: "/project-vitepress/icons/favicon.svg" }], //部署到vitepress仓库 [!code ++]
+    ["link", { rel: "icon", href: `${base}/icons/favicon.svg` }], //部署到vitepress仓库 [!code ++]
     [
       "meta",
       {
