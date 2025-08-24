@@ -10,8 +10,8 @@ const vitePressOptions = {
     "专注于前端开发的实用工具集合，包含SSE流式管理器、轮询管理器等，提供完整的API文档和使用示例",
   //fav图标
   head: [
-    ["link", { rel: "icon", href: "/icons/favicon.svg" }], //部署到根目录 [!code --]
-    ["link", { rel: "icon", href: `${base}/icons/favicon.svg` }], //部署到vitepress仓库 [!code ++]
+    // ["link", { rel: "icon", href: "/icons/favicon.svg" }], //部署到根目录 [!code --]
+    // ["link", { rel: "icon", href: `${base}/icons/favicon.svg` }], //部署到vitepress仓库 [!code ++]
     [
       "meta",
       {
@@ -24,7 +24,7 @@ const vitePressOptions = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: "前端工具集",
-    logo: "/icons/icon-32x32.png",
+    // logo: "/icons/icon-32x32.png",
     nav: [
       { text: "首页", link: "/" },
       { text: "工具文档", link: "/examples" },
